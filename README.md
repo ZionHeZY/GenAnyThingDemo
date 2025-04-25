@@ -1,6 +1,6 @@
 # GenAnyThingDemo
 
-一个基于 Clean 架构的 Android AI 网页生成演示项目，支持 WebView 与原生能力的 JS 桥接。
+AI生成Demo
 
 ## 目录结构
 
