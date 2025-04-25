@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/background_light"
+    android:padding="16dp">
+
+    <!-- 输入与按钮卡片 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_bg_elevated"
+        android:elevation="16dp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/et_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入你想要生成的页面描述"
+            android:maxLines="4"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btn_generate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="生成"
+            android:background="@drawable/rounded_button_dark"
+            android:textColor="#C2FFB4"
+            android:elevation="4dp"
+            android:padding="0dp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <!-- 信息展示区（CMD风格卡片） -->
+    <ScrollView
+        android:id="@+id/scroll_info"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@drawable/cmd_bg"
+        android:layout_marginBottom="12dp"
+        android:overScrollMode="never"
+        android:elevation="8dp">
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#C2FFB4"
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:padding="8dp"
+            android:lineSpacingExtra="2dp"
+            android:textIsSelectable="true"/>
+    </ScrollView>
+
+    <!-- WebView 卡片 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_bg_elevated"
+        android:elevation="16dp"
+        android:padding="8dp">
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"/>
+    </FrameLayout>
+
+</LinearLayout>
