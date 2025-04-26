@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gen_model_array">
+        <item>Gemini</item>
+        <item>DeepSeek</item>
+        <item>ARK</item>
+    </string-array>
+</resources>
