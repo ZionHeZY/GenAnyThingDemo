@@ -3,8 +3,8 @@
 AI 原生网页生成演示项目，支持 Gemini、DeepSeek、ARK 多大模型接入，支持 JS 与原生能力桥接。
 
 ## 最新特性
-- 支持 Gemini、DeepSeek、ARK 三大 AI 平台一键切换
-- 所有平台 API Key 统一通过
+- 支持 Gemini、DeepSeek平台一键切换
+- 所有平台 API Key 统一管理
 - 支持自动适配移动端 WebView，生成网页自适应所有设备
 - 支持 JS 调用原生能力（震动、闪光灯、响铃、拨号、Toast、设备信息等）
 - UI 卡片风格统一，体验简洁美观
